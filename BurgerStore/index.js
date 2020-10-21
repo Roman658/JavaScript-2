@@ -21,7 +21,7 @@ const renderGoodsItem = (title = 'Product none', price = 0, image = 'https://pla
 };
 
 const renderGoodsList = (list) => {
-   /* let goodsList = list.map(item => renderGoodsItem(item.title, item.price, item.image)).join("");
+   /* let goodsList = list.map(item => renderGoodsItem(item.title, item.price, item.image));
     document.querySelector('.products').innerHTML = goodsList;*/
     document.querySelector('.products').insertAdjacentHTML('afterbegin', list.map(item => renderGoodsItem(item.title, item.price, item.image)).join(''));
 }
